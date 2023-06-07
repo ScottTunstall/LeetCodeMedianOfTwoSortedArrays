@@ -4,6 +4,6 @@ My solution for the Median Of Two Sorted Arrays HARD problem on Leetcode.
 
 https://leetcode.com/problems/median-of-two-sorted-arrays/
 
-This wasn't hard at all - in fact it was extremely easy. Took me half an hour, tops. Maybe C#'s LINQ made it so.
+Faster than 90% of submissions. That'll do me nicely.
 
-As usual, you're not allowed to submit this code or any derivatives of this to pass Leetcode tests. Use this for studying the algorithm instead.
+<img width="700" alt="image" src="https://github.com/ScottTunstall/LeetCodeMedianOfTwoSortedArrays/assets/34286887/b22cfd3e-1c76-4e0b-b744-df0237c8f4a7">
