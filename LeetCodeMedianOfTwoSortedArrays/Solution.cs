@@ -10,28 +10,28 @@ namespace LeetCodeMedianOfTwoSortedArrays
         {
             var count = nums1.Length + nums2.Length;
             var nums = new int[(count/2)+1];
-            var mergedIndex = 0;
+            var mergeIndex = 0;
             var stopAt = (count / 2)+1;
             var lindex = 0;
             var rindex = 0;
 
             for (;;)
             {
-                if (mergedIndex >= stopAt)
+                if (mergeIndex >= stopAt)
                     break;
 
                 if (lindex < nums1.Length) 
                 {
                     if (rindex == nums2.Length || nums1[lindex] <= nums2[rindex])
                     {
-                        nums[mergedIndex++] = nums1[lindex++];
+                        nums[mergeIndex++] = nums1[lindex++];
                         continue;
                     }
                 }
                 
                 if (rindex < nums2.Length)
                 {
-                    nums[mergedIndex++] = nums2[rindex++];
+                    nums[mergeIndex++] = nums2[rindex++];
                     continue;
                 }
 
@@ -44,7 +44,7 @@ namespace LeetCodeMedianOfTwoSortedArrays
             }
 
             var index = (count / 2) - 1;
-            return ((double)nums[index] + (double)nums[index +1])/2;
+            return (nums[index] + (double)nums[index +1])/2;
         }
     }
 }
